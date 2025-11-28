@@ -4,10 +4,10 @@
 Paper Link: [TBD]()
 
 This repository contains the official implementation of the paper **"Similarity Pruning: Accelerating 1NN-DTW Classification While Improving Accuracy"**.
-
+> 🚧 **Work in Progress**: This repository is currently under active development. We are working to finalize the structured code examples for **Similarity Pruning** and will update the repository as soon as possible.
 ## 📖 Abstract
 
-The 1-Nearest Neighbor Dynamic Time Warping (1NN-DTW) classifier remains a cornerstone in time series analysis. While generalizing to the $k$NN framework is often hypothesized to enhance robustness, our comprehensive evaluation on 96 UCR datasets reveals a counter-intuitive reality: increasing $k$ frequently yields no accuracy benefit while incurring significant computational costs due to the weakening of lower bounds.
+The 1-Nearest Neighbor Dynamic Time Warping (1NN-DTW) classifier remains a cornerstone in time series analysis. While generalizing to the kNN framework is often hypothesized to enhance robustness, our comprehensive evaluation on 96 UCR datasets reveals a counter-intuitive reality: increasing $k$ frequently yields no accuracy benefit while incurring significant computational costs due to the weakening of lower bounds.
 
 Driven by the hypothesis that a single, highly similar neighbor often renders broader neighborhood information superfluous, we introduce **Similarity Pruning (SP)**. Unlike traditional cell-level or time-series-level optimizations, SP operates at the **dataset-level**, dynamically terminating the search process upon identifying templates that exhibit sufficient similarity. This strategy is strictly orthogonal to and compatible with existing acceleration techniques (e.g., LB_Keogh).
 
